@@ -1,0 +1,241 @@
+@import url("/usr/share/gnome-shell/theme/gnome-shell.css");
+
+stage {
+  font-family: Source Sans Pro, Sans-Serif;
+  font-size: 11pt;
+}
+
+/* TODO
+- weird outlining in panel menus
+- calendar event list
+- reorganize these first few groups of border controls. some redundancy
+- I can't get toggle buttons to work. Are they part of the GTK theme now?
+*/
+
+/* focused things */
+.calendar-day-base:hover, .calendar-day-base:focus,
+.search-provider-icon:focus, .search-provider-icon:selected, .search-provider-icon:hover,
+.list-search-result:focus,
+.list-search-result:selected,
+.list-search-result:hover,
+.app-well-app:hover .overview-icon, .app-well-app:focus .overview-icon, .app-well-app:selected .overview-icon,
+.app-well-app.app-folder:hover .overview-icon,
+.app-well-app.app-folder:focus .overview-icon,
+.app-well-app.app-folder:selected .overview-icon,
+.show-apps:hover .overview-icon,
+.show-apps:focus .overview-icon,
+.show-apps:selected .overview-icon,
+.grid-search-result:hover .overview-icon,
+.grid-search-result:focus .overview-icon,
+.grid-search-result:selected .overview-icon,
+.button:focus,
+.search-entry:focus,
+.switcher-list .item-box:outlined,
+.workspace-thumbnail-indicator,
+.window-clone-border,
+.system-menu-action:hover, .system-menu-action:focus,
+.modal-dialog-linked-button:focus {
+  border: 2px solid #d64937;
+}
+.calendar-day-base:hover, .calendar-day-base:focus {
+  border-radius: 20px;
+  background: none;
+}
+
+/* OK maybe some borders should be thicker */
+.window-clone-border,
+.workspace-thumbnail-indicator,
+.switcher-list .item-box:outlined,
+.search-provider-icon:focus, .search-provider-icon:selected, .search-provider-icon:hover,
+.list-search-result:focus,
+.list-search-result:selected,
+.list-search-result:hover,
+.app-well-app:hover .overview-icon, .app-well-app:focus .overview-icon, .app-well-app:selected .overview-icon,
+.app-well-app.app-folder:hover .overview-icon,
+.app-well-app.app-folder:focus .overview-icon,
+.app-well-app.app-folder:selected .overview-icon,
+.show-apps:hover .overview-icon,
+.show-apps:focus .overview-icon,
+.show-apps:selected .overview-icon,
+.grid-search-result:hover .overview-icon,
+.grid-search-result:focus .overview-icon,
+.grid-search-result:selected .overview-icon {
+  background: none;
+  border: 4px;
+  border-radius: 12px;
+}
+
+/* active things */
+.page-indicator:checked .page-indicator-icon, .page-indicator:checked:active,
+.app-view-control:checked,
+.app-well-app:active .overview-icon, .app-well-app:checked .overview-icon,
+.app-well-app.app-folder:active .overview-icon,
+.app-well-app.app-folder:checked .overview-icon,
+.show-apps:active .overview-icon,
+.show-apps:checked .overview-icon,
+.grid-search-result:active .overview-icon,
+.grid-search-result:checked .overview-icon,
+.popup-menu .popup-menu-item:active,
+.ws-switcher-active-up, .ws-switcher-active-down,
+.calendar-day-base:active,
+.datemenu-today-button:active,
+.world-clocks-button:active,
+.message-list-section-title:active,
+.system-menu-action:active,
+.nm-dialog-item:selected,
+.app-well-app-running-dot,
+.window-caption:hover,
+.switcher-list .item-box:selected,
+StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active,
+.modal-dialog-linked-button:active,
+.search-provider-icon:active, .search-provider-icon:checked {
+  background-color: #d64937;
+}
+
+.show-apps:active .overview-icon,
+.show-apps:checked .overview-icon {
+  border-radius: 12px;
+}
+
+.switcher-list .item-box:selected {
+  border-radius: 14px;
+}
+
+.switcher-arrow, .shell-link:hover,
+.search-entry:hover .search-entry-icon,
+.search-entry:focus .search-entry-icon {
+  color: #d64937;
+}
+
+.url-highlighter {
+  link-color: #d64937;
+}
+
+.slider {
+  height: 5px;
+  -slider-height: 3px;
+  -slider-active-background-color: #d64937;
+  -slider-active-border-color: #d64937;
+}
+
+#panel .panel-button:active, #panel .panel-button:overview,
+#panel .panel-button:focus, #panel .panel-button:checked {
+  background-color: rgba(0, 0, 0, 0.01);
+  box-shadow: inset 0 -2px 0px #d64937;
+  color: white;
+}
+
+#panel,
+.search-entry {
+  background-color: #2d2d2d;
+}
+
+.search-entry {
+	border: 1px;
+}
+
+.toggle-switch {
+  width: 72px;
+  height: 21px;
+  background-size: contain;
+}
+
+.toggle-switch-us, .toggle-switch-intl {
+  background-image: url("toggle-off.png");
+}
+
+.toggle-switch-us:checked, .toggle-switch-intl:checked {
+  background-image: url("toggle-on.png");
+}
+
+.system-menu-action:hover, .system-menu-action:focus {
+  padding: 13px;
+}
+
+.app-view-control {
+  background-color: #2d2d2d;
+  border: none;
+  box-shadow: none;
+}
+
+.page-indicator-icon {
+  background-image: none;
+  border-radius: 20px;
+  border: none;
+  background-color: #2d2d2d;
+}
+
+.modal-dialog-linked-button {
+  background-color: #444444;
+  border: 2px solid #444444;
+  box-shadow: none;
+}
+
+/* No real border here, just trying to get the unfocused size to match the focused size */
+.search-provider-icon,
+.list-search-result,
+.switcher-list .item-box,
+.app-well-app .overview-icon,
+.app-well-app.app-folder .overview-icon,
+.show-apps .overview-icon,
+.grid-search-result .overview-icon {
+  border: 4px;
+  background: none;
+}
+.calendar-day-base {
+  border: 2px;
+}
+
+.ws-switcher-box {
+  height: 50px;
+  border: 2px solid #444444;
+  background-color: #333333;
+  border-radius: 8px;
+}
+
+.calendar-day-with-events {
+  background-image: url("calendar-today.svg");
+}
+
+.modal-dialog,
+.osd-window,
+.resize-popup,
+.switcher-list,
+.workspace-switcher-container,
+.system-menu-action,
+.notification-banner,
+.workspace-thumbnails,
+.popup-menu .popup-menu-content,
+#dash {
+  background-color: #2d2d2d;
+  border: 2px solid #444444;
+}
+
+.switcher-list {
+  font-weight: bold;
+}
+
+.popup-menu .popup-menu-content {
+  border-radius: 12px;
+  box-shadow: noner;
+}
+
+.popup-menu .popup-sub-menu {
+  background-color: #333333,
+}
+
+.popup-menu .popup-menu-item:checked,
+.popup-separator-menu-item {
+  background-color: #444444;
+}
+
+.popup-menu-boxpointer,
+.candidate-popup-boxpointer {
+  -arrow-base: 0px;
+  -arrow-rise: 0px;
+}
+
+.background-menu,
+.popup-menu.panel-menu {
+  -boxpointer-gap: 0px;
+}
