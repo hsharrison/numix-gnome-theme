@@ -217,7 +217,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active,
 
 .popup-menu .popup-menu-content {
   border-radius: 12px;
-  box-shadow: noner;
+  box-shadow: none;
 }
 
 .popup-menu .popup-sub-menu {
