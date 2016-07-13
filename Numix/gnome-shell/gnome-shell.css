@@ -148,10 +148,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active,
   background-image: url("toggle-on.png");
 }
 
-.system-menu-action:hover, .system-menu-action:focus {
-  padding: 13px;
-}
-
 .modal-dialog-linked-button {
   background-color: #444444;
   border: 2px solid #444444;
@@ -172,6 +168,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active,
 .calendar-day-base {
   border: 2px;
 }
+.system-menu-action {
+  border: 2px solid #444444;
+  padding: 12px;
+  background: none;
+}
 
 .ws-switcher-box {
   height: 50px;
@@ -191,7 +192,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active,
 .resize-popup,
 .switcher-list,
 .workspace-switcher-container,
-.system-menu-action,
 .notification-banner,
 .workspace-thumbnails,
 .popup-menu .popup-menu-content,
