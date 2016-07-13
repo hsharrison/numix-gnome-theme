@@ -176,8 +176,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active,
 
 .ws-switcher-box {
   height: 50px;
-  border: 2px solid #444444;
-  background-color: #333333;
+  border: none;
+  background-color: #444444;
   border-radius: 8px;
 }
 
