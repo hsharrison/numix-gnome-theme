@@ -234,3 +234,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active,
 .popup-menu.panel-menu {
   -boxpointer-gap: 0px;
 }
+
+/* Actual day */
+.calendar-today {
+  background-color: #d64937; 
+}
